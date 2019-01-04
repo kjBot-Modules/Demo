@@ -8,7 +8,7 @@ use kjBot\Framework\Message;
 class DemoModule extends Module{
 
     public function process(array $args, MessageEvent $event): Message{
-        return sendBack('Hello, world!', $event);
+        return $event->sendBack('Hello, world!');
     }
 
 }
